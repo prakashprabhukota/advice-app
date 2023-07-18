@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: hsl(0, 0%, 76%);
+    --color-secondary: hsl(0, 0%, 96%);
+    --color-acent: hsl(334, 76%, 50%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+#root,
+html,
+body {
+    height: 100vh;
+}
+
+.app {
+    height: 100%;
+    background-color: var(--color-primary);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 1.6rem;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    height: 580px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: var(--color-acent);
+}
+.shuffle {
+    margin-block: 1rem;
+    cursor: pointer;
+    background-color: unset;
+    border: unset;
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        width: 80%;
+        height: 55%;
+        
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+}
+    
